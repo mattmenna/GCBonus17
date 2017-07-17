@@ -4,9 +4,12 @@
 public class Warrior extends GameCharacter {
     private String weaponType;
 
+
     @Override
     public void play() {
+        characterType = "Warrior";
         super.play();
+        System.out.println("Weapon for " + characterType + " : ");
         setWeaponType(scnr.nextLine());
         System.out.println("Weapon Type : " + weaponType);
     }

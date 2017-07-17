@@ -7,7 +7,7 @@ public class MagicUsingCharacter extends GameCharacter {
     @Override
     public void play() {
         super.play();
-        setMagicalEnergy(rand.nextInt());
+        setMagicalEnergy(rand.nextInt(100));
         System.out.println("Magical Energy : " + magicalEnergy);
 
     }

@@ -10,14 +10,17 @@ public abstract class GameCharacter {
     private int intelligence;
     public Scanner scnr = new Scanner(System.in);
     public Random rand = new Random();
+    public String characterType;
 
     public GameCharacter() {
+        System.out.println("Name of Character");
         setName(scnr.nextLine());
-        setIntelligence(rand.nextInt());
-        setStrength(rand.nextInt());
+        setIntelligence(rand.nextInt(100));
+        setStrength(rand.nextInt(100));
     }
 
     public void play() {
+
         System.out.println("Name :" + name);
         System.out.println("Strength : " + strength + "\n" + "Intelligence : " + intelligence);
     }

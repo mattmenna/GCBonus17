@@ -5,7 +5,6 @@ import java.util.ArrayList;
  */
 public class GameMain {
 
-
     public static void main(String[] args) {
 
         GameCharacter[] gameCharacters = new GameCharacter[5];
@@ -17,6 +16,7 @@ public class GameMain {
 
         for (int i = 0; i < gameCharacters.length; i++) {
             gameCharacters[i].play();
+            System.out.println();
         }
     }
 

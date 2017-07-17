@@ -4,10 +4,12 @@
 public class Wizard extends MagicUsingCharacter {
     private int spellNumber;
 
+
     @Override
     public void play() {
+        characterType = "Wizard";
         super.play();
-        setSpellNumber(rand.nextInt());
+        setSpellNumber(rand.nextInt(100));
         System.out.println("Spellnumber " + spellNumber);
     }
 
