@@ -7,6 +7,7 @@ public class Warrior extends GameCharacter {
     @Override
     public void play() {
         super.play();
+        setWeaponType(scnr.nextLine());
         System.out.println("Weapon Type : " + weaponType);
     }
 

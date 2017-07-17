@@ -7,6 +7,7 @@ public class Wizard extends MagicUsingCharacter {
     @Override
     public void play() {
         super.play();
+        setSpellNumber(rand.nextInt());
         System.out.println("Spellnumber " + spellNumber);
     }
 

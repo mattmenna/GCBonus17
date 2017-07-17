@@ -1,3 +1,6 @@
+import java.util.Random;
+import java.util.Scanner;
+
 /**
  * Created by Matt on 7/17/2017.
  */
@@ -5,8 +8,13 @@ public abstract class GameCharacter {
     private String name;
     private int strength;
     private int intelligence;
+    public Scanner scnr = new Scanner(System.in);
+    public Random rand = new Random();
 
     public GameCharacter() {
+        setName(scnr.nextLine());
+        setIntelligence(rand.nextInt());
+        setStrength(rand.nextInt());
     }
 
     public void play() {
